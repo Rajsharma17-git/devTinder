@@ -50,14 +50,10 @@ const userSchema = new mongoose.Schema({
     },
     photoUrl: {
         type: String,
-        // default: "/home/shree/Downloads/149071.png ",
-        //validate(value) {
-        // if(!validator.isURL(value)) {
-        //   throw new Error("Invalid photo url" + value);
-        // }
-        // },
     },
-
+    about: {
+        type: String,
+    },
 },
     {
         timestamps: true,
